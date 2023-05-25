@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sps.css">
+    <title>Stone paper Scissors</title>
+</head>
+
+<body>
+    <h1 class ="heading">Stone/paper/Scissors</h1>
+    <div class="container">
+        <h2 class="">Pick your turn</h2>
+        <div class="hands">
+            <div class="hand" onclick="play('stone')">✊</div>
+            <div class="hand" onclick="play('paper')">✋</div>
+            <div class="hand" onclick="play('scissors')">✌️</div>
+        </div>
+        <div class="choices" id="choices">
+            <div class="choice" id="playerChoice">
+            </div>
+            <div class="choice">Vs</div>
+            <div class="choice" id="computerChoice">
+            </div>
+        </div>
+        <div class="players">
+            <h5 class="human">Human player</h5>
+            <h5 class="computer">Computer player</h5>
+        </div>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="./sps.js"></script>
+</body>
+
+</html>

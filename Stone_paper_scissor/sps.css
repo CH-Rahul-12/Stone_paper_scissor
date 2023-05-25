@@ -1,0 +1,121 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+h1{
+    color:#333;
+}
+
+.hands{
+    display: flex;
+    justify-content: center;
+    margin:15px;
+}
+
+.hands .hand{
+    font-size: 48px;
+    padding:10px;
+    cursor:pointer;
+    transition:transform 0.3s ease-in-out;
+}
+
+.hands .hand:hover{
+    transform:scale(1.1);
+}
+
+.result {
+    margin-top:20px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.choices{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.choices .choice{
+    margin:0 px;
+    font-size:25px;
+}
+.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container{
+    max-width: 429px;
+    margin:0 auto;
+    padding:59px;
+    background-color:#fff;
+    border-radius: 5px;
+    border: 3px solid rgb(247, 227, 4);
+    box-shadow: 2px 22px 21px -4px rgba(0,0,0,0.1);
+}
+.players h5{
+    margin:0 8px;
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color:rgb(247, 227, 4)
+}
+.human{
+    font-size: medium;
+    color: rgb(18, 235, 18);
+}
+.computer{
+    font-size: medium;
+    color:rgb(230, 47, 47);
+}
+
+.turn{
+    color: blueviolet;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ /* Responsive styles */
+        @media (min-width: 768px) {
+            .container {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 600px;
+            }
+
+            .heading {
+                font-size: 32px;
+            }
+
+            .turn {
+                font-size: 28px;
+            }
+
+            .hand {
+                font-size: 64px;
+                padding: 20px;
+            }
+
+            .choice {
+                font-size: 32px;
+            }
+
+            .players h5 {
+                font-size: 20px;
+            }
+
+            .result {
+                font-size: 32px;
+            }
+        } 
